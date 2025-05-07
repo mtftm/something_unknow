@@ -30,12 +30,6 @@ const baseConfig = {
 
 // 配置侧边栏的路径
 const sidebarOptions = [
-  // 首页
-  {
-    ...baseConfig,
-    scanStartPath: '/',
-    resolvePath: '/',
-  },
   // 关于
   // {
   //   ...baseConfig,
@@ -47,22 +41,14 @@ const sidebarOptions = [
 const themeConfig: ThemeContext = {
   siteTitle: 'RLE.wiki',
   siteDescription: '一份 RLE 指北',
-  githubRepoLink: 'https://github.com/project-trans/RLE-wiki',
+  githubRepoLink: 'https://github.com/',
   rootDir: 'docs',
-  include: ['campus', 'contributor-guide', 'fashion'],
   nav,
   sidebarOptions,
   enableDisclaimer: true,
-  // disclaimerPaths: [{
-  //   path: '/campus/',
-  //   summaryHtml: 'RLE.wiki「大学指南」中的内容，仅供参考。可能存在过时或不准确的信息，请谨慎甄别。',
-  //   detailHtml:
-  //     '<p>RLE.wiki「大学指南」中的内容，仅供参考。可能存在过时或不准确的信息，请谨慎甄别。</p>' +
-  //     '<p>「大学指南」板块中的内容，多数来自于读者投稿，并经编辑简单整理和形式审查后登载，主要体现其投稿者主观观点。不代表 RLE.wiki 编辑团队及我们的任何相关维护人员立场。</p>' +
-  //     '<p>若存在任何有误或不当内容，请联系 <a href="mailto:rlewiki@project-trans.org">rlewiki@project-trans.org</a>。</p>',
-  // }],
-  // disclaimerStatusKey: 'disclaimerStatus',
-  // disclaimerStatusExpiration: 1000
+  sitePattern: `docs`,
+  enableSuggestionBox: false,
+  hostName: 'https://example.com', // Updated hostName to a valid format
 }
 
 // https://vitepress.dev/reference/site-config
